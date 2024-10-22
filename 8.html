@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Title</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cover {
+    background-color: #3eb33e;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.cover-image {
+    height: 200px;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.advertisement {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Magazine Title</h1>
+        <nav>
+            <a href="#">Articles</a>
+            <a href="#">Advertisement</a>
+        </nav>
+    </header>
+    
+    <section class="cover">
+        <div class="cover-image">Cover Image</div>
+    </section>
+    
+    <section class="articles">
+        <div class="article" id="article1">
+            <h2>Article 1</h2>
+            <p>This is a brief summary of the first article.</p>
+        </div>
+        <div class="article" id="article2">
+            <h2>Article 2</h2>
+            <p>This is a brief summary of the second article.</p>
+        </div>
+        <div class="article" id="article3">
+            <h2>Article 3</h2>
+            <p>This is a brief summary of the third article.</p>
+        </div>
+        <div class="advertisement" id="ad1">Advertisement</div>
+        <div class="article" id="article4">
+            <h2>Article 4</h2>
+            <p>This is a brief summary of the fourth article.</p>
+        </div>
+        <div class="advertisement" id="ad2">Advertisement</div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Magazine Company</p>
+    </footer>
+</body>
+</html>
